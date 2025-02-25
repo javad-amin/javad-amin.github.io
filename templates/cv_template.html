@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ cv.name }} - CV</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Soft Skills</h2>
+            <div class="skills-list">
+                {% for skill in cv.skills %}
+                <div class="skill-item">{{ skill }}</div>
+                {% endfor %}
+            </div>
+
+            <h2>Technical Skills</h2>
+            {% for category, items in cv.tech_stack.items() %}
+            <div class="tech-category">
+                <h3>{{ category }}</h3>
+                <div class="tech-items">
+                    {% for tech in items %}
+                    <span class="tech">{{ tech }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+
+            <h2>Languages</h2>
+            <div class="languages-list">
+                {% for language in cv.languages %}
+                <div class="language-item">{{ language }}</div>
+                {% endfor %}
+            </div>
+        </aside>
+
+        <main class="main">
+            <header>
+                <div class="profile">
+                    {% if cv.image %}
+                    <img src="{{ cv.image }}" alt="Profile Picture">
+                    {% endif %}
+                    <div class="profile-info">
+                        <h1 class="name">{{ cv.name }}</h1>
+                        <p class="title">{{ cv.title }}</p>
+                        <p class="location">
+                            {{ cv.address }}
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <ul>
+                        <li>
+                            <a href="mailto:{{ cv.email }}" class="contact-link">
+                                <span class="icon">📧</span>
+                                <span>{{ cv.email }}</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:{{ cv.phone }}" class="contact-link">
+                                <span class="icon">📱</span>
+                                <span>{{ cv.phone }}</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ cv.github }}" class="contact-link" target="_blank" rel="noopener">
+                                <span class="icon">
+                                    <img src="images/github.png" alt="GitHub" width="16" height="16">
+                                </span>
+                                <span>{{ cv.github }}</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ cv.linkedin }}" class="contact-link" target="_blank" rel="noopener">
+                                <span class="icon">
+                                    <img src="images/linkedin.png" alt="LinkedIn" width="16" height="16">
+                                </span>
+                                <span>{{ cv.linkedin }}</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </header>
+            <div class="summary">
+                <p>{{ cv.summary }}</p>
+            </div>
+
+            <section>
+                <h2>Work Experience</h2>
+                <div class="timeline">
+                    {% for job in cv.experience %}
+                    <div class="job">
+                        <div class="job-header">
+                            <h3>{{ job.position }}</h3>
+                            <span class="job-date">{{ job.start_date }} - {{ job.end_date }}</span>
+                        </div>
+                        <h4>{{ job.company }}</h4>
+                        <p>{{ job.description }}</p>
+                        {% if job.tech_stack %}
+                        <p><strong>Tech Stack:</strong> {{ job.tech_stack }}</p>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <div class="timeline">
+                    {% for edu in cv.education %}
+                    <div class="education">
+                        <div class="education-header">
+                            <h3>{{ edu.degree }}</h3>
+                            <span class="education-date">{{ edu.end_date }}</span>
+                        </div>
+                        <h4>{{ edu.institution }}</h4>
+                        {% if edu.relevant_courses %}
+                        <div class="courses-section">
+                            <strong>Relevant Courses:</strong>
+                            <div class="courses-grid">
+                                {% for course in edu.relevant_courses.split('|') %}
+                                <div class="course-item">{{ course.strip() }}</div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

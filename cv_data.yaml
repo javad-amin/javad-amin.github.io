@@ -1,0 +1,162 @@
+name: Javad Amin
+image: "images/profile.png"
+title: Software Engineer
+summary: >
+  Passionate Software Engineer with a strong background in developing scalable,
+  efficient, and high-performing solutions. Experienced in full-stack 
+  development, API integrations, and cloud technologies. Proficient in problem-solving, 
+  optimizing workflows, and driving technical innovation.
+
+address: Stockholm, Sweden
+phone: "123-456-7890"
+email: "javad.amin@example.com"
+github: "https://github.com/javad-amin"
+linkedin: "https://linkedin.com/in/javad-amin"
+
+skills:
+  - Communication
+  - Problem-Solving
+  - Critical Thinking
+  - Adaptability
+  - Teamwork
+  - Time Management
+  - Attention to Detail
+  - Knowledge Sharing
+
+tech_stack:
+  "🖥️ Programming":
+    - C#
+    - JavaScript
+    - Python
+    - TypeScript
+
+  "🌐 Frontend":
+    - Angular
+    - HTML/CSS
+    - React
+    - Vue.js
+
+  "⚙️ Backend":
+    - Django
+    - Electron.js
+    - Express.js
+    - Flask
+    - Node.js
+
+  "📡 API & Integration":
+    - API Gateway
+    - Event-Driven Architecture
+    - Microservices
+    - REST APIs GraphQL
+
+  "🛢️ Databases":
+    - MongoDB
+    - MySQL
+    - PostgreSQL
+    - SQLite3
+
+  "🛠️ DevOps & Cloud":
+    - AWS Services
+    - CI/CD
+    - Docker
+    - GitHub Actions
+    - Kubernetes
+    - Terraform
+
+  "📊 Monitoring":
+    - Cloudwatch
+    - Grafana
+    - Kibana
+    - Prometheus
+    - Sentry
+
+  "📐 Best Practices":
+    - Agile Methodology
+    - Clean Code
+    - Code Review
+    - Design Patterns
+    - Test-Driven Development
+
+languages:
+  - English (Fluent)
+  - Swedish (Fluent)
+  - Persian (Native)
+  - Arabic (Proficient)
+
+experience:
+  - position: Software Engineer
+    company: Billogram
+    start_date: "Sep 2024"
+    end_date: "Present"
+    description: >
+      Contributing to the development of Billogram’s core product by 
+      implementing scalable and efficient solutions. Improving 
+      system performance, optimizing cloud infrastructure, and collaborating 
+      with cross-functional teams to drive technical enhancements.
+    tech_stack: "PHP | Django | React | AWS Lambda | Docker | Kubernetes"
+
+  - position: Integration Developer
+    company: Billogram
+    start_date: "Jan 2022"
+    end_date: "Sep 2024"
+    description: >
+      Spearheaded customer onboarding automation by integrating Billogram's 
+      platform with various business ecosystems. Designed and implemented 
+      event-driven microservices architecture to enhance performance, 
+      reliability, and maintainability. Developed robust API integrations 
+      and automated complex workflows for operational efficiency.
+    tech_stack: "Python | React | AWS Lambda | Docker | Kubernetes"
+
+  - position: Software Engineering Consultant
+    company: Scania Group
+    start_date: "June 2021"
+    end_date: "Jan 2022"
+    description: >
+      Developed and deployed cloud-based applications for Scania, focusing 
+      on scalable and maintainable architectures. Worked with cross-functional 
+      teams to design microservices and cloud-native solutions, optimizing 
+      system performance and reliability.
+    tech_stack: "Python | Angular | AWS Lambda"
+
+  - position: Co-Founder / Software Engineer
+    company: Resellkit
+    start_date: "Jan 2019"
+    end_date: "Jan 2022"
+    description: >
+      Co-founded and developed a full-stack productivity tool for online resellers, 
+      enabling seamless multi-marketplace integration. Designed RESTful APIs, 
+      built real-time dashboards, and optimized databases for performance and scalability.
+    tech_stack: "Electron.js | Vue.js | SQLite3 | Express.js | AWS S3"
+
+  - position: Ticket Sale / Customer Support / IT Support
+    company: Iran Air
+    start_date: "Apr 2013"
+    end_date: "Jul 2016"
+    description: >
+      Provided IT support for booking systems and maintained the local company website while 
+      assisting customers with ticket sales and troubleshooting.
+
+  - position: Front-End Web Developer
+    company: Cyberfall
+    start_date: "Jan 2012"
+    end_date: "Mar 2013"
+    description: >
+      Designed and developed responsive, user-friendly websites for clients using 
+      modern frontend frameworks. Enhanced UX/UI with interactive components and 
+      optimized websites for performance.
+    tech_stack: "WordPress | Drupal | Bootstrap | Photoshop"
+
+education:
+  - degree: B.Sc. in Computer Science
+    institution: Stockholm University & Royal Institute of Technology (KTH)
+    relevant_courses: >-
+      Programming (Scheme, Python) |
+      Object-Oriented Programming (Java) |
+      Programming Paradigms |
+      Computer Graphics |
+      Numerical Analysis |
+      Database Technology |
+      Algorithms and Complexity |
+      Software Design |
+      Machine Learning |
+      Computer Vision
