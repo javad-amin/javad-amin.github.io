@@ -934,3 +934,213 @@ h4 {
     }
 
 }
+
+/* Tablet styles */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .sidebar {
+        flex: 0 0 180px;
+        min-width: 160px;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .profile-info {
+        align-items: center;
+    }
+
+    .courses-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 15px;
+        width: calc(100% - 30px);
+        /* account for container padding */
+    }
+
+    .sidebar {
+        flex: none;
+        width: calc(100% - 24px);
+        /* account for sidebar padding */
+        max-width: none;
+        min-width: unset;
+        margin: 20px 0;
+        padding: 12px;
+        order: 2;
+    }
+
+    .main {
+        order: 1;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .contact-info ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .contact-info ul li {
+        margin: 5px 0;
+    }
+
+    .job-header,
+    .education-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-items {
+        grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    }
+}
+
+/* Update small mobile styles to start from 400px */
+@media screen and (max-width: 400px) {
+    .container {
+        padding: 8px;
+        margin: 0;
+    }
+
+    .profile img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 14px;
+    }
+
+    .location {
+        font-size: 12px;
+    }
+
+    .contact-link {
+        font-size: 12px;
+    }
+
+    .sidebar {
+        padding: 8px;
+        min-width: unset;
+        max-width: 100%;
+        width: calc(100% - 16px);
+        /* account for padding */
+        margin: 10px 0;
+    }
+
+    .tech-category {
+        padding: 6px;
+    }
+
+    .tech {
+        font-size: 9px;
+        padding: 3px 4px;
+    }
+
+    .tech-items {
+        grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+        gap: 4px;
+    }
+
+    .job,
+    .education {
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+
+    .job-header h3,
+    .education-header h3 {
+        font-size: 16px;
+    }
+
+    .job h4,
+    .education h4 {
+        font-size: 14px;
+    }
+
+    section h2,
+    .sidebar h2 {
+        font-size: 18px;
+        margin: 20px 0 15px;
+    }
+
+    .courses-grid {
+        gap: 6px;
+    }
+
+    .course-item {
+        font-size: 11px;
+        padding: 6px 8px;
+    }
+
+    .skill-item,
+    .language-item {
+        font-size: 11px;
+        padding: 5px 8px;
+    }
+}
+
+/* Small mobile styles */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .profile img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .tech-category {
+        padding: 8px;
+    }
+
+    .tech {
+        font-size: 10px;
+        padding: 4px 6px;
+    }
+
+    .job,
+    .education {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+}

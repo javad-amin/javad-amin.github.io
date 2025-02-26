@@ -54,18 +54,23 @@
                 </div>
                 <div class="contact-info">
                     <ul>
-                        <li>
-                            <a href="mailto:{{ cv.email }}" class="contact-link">
-                                <span class="icon">📧</span>
-                                <span>{{ cv.email }}</span>
-                            </a>
-                        </li>
+                        {% if cv.phone %}
                         <li>
                             <a href="tel:{{ cv.phone }}" class="contact-link">
                                 <span class="icon">📱</span>
                                 <span>{{ cv.phone }}</span>
                             </a>
                         </li>
+                        {% endif %}
+                        {% if cv.email %}
+                        <li>
+                            <a href="mailto:{{ cv.email }}" class="contact-link">
+                                <span class="icon">📧</span>
+                                <span>{{ cv.email }}</span>
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if cv.github %}
                         <li>
                             <a href="{{ cv.github }}" class="contact-link" target="_blank" rel="noopener">
                                 <span class="icon">
@@ -74,6 +79,8 @@
                                 <span>{{ cv.github }}</span>
                             </a>
                         </li>
+                        {% endif %}
+                        {% if cv.linkedin %}
                         <li>
                             <a href="{{ cv.linkedin }}" class="contact-link" target="_blank" rel="noopener">
                                 <span class="icon">
@@ -82,7 +89,7 @@
                                 <span>{{ cv.linkedin }}</span>
                             </a>
                         </li>
-
+                        {% endif %}
                     </ul>
                 </div>
             </header>
